@@ -1,0 +1,58 @@
+:root {
+    background-color: rgb(197, 197, 197)
+}
+
+h1 {
+    font-size: 2.5 rem;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center; 
+}
+
+form {
+    display: block; 
+    margin: auto; 
+    margin-top: 50px; 
+    width: 600px; 
+    background-color: white; 
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
+.field {
+    padding: 5px; 
+}
+
+label {
+    display: block;
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 0px;
+  }
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 0px;
+    font-size: 20px;
+    color: black;
+    background-color: rgba(6, 244, 54, 0.783);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  input, select {
+    padding: 10px 0px;
+    width: 100%;
+    border-radius: 5px;
+    border: solid grey 0.5px;
+  }
+
+  .option {
+    padding: 5px;
+  }
+
+  .error {
+    color: red; 
+  }

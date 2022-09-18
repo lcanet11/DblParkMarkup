@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="en">    
+<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Double Parked
+        </title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <form name="form_registro" onsubmit="registrarse(); return false">
+            <h1> Double Parked</h1>
+            <div class="field">
+                <label>Login Name</label>
+                <input type="text" name="nombre" id="nombre_id">
+            </div>
+            <div class="error" id="nombre_error"></div>
+            <div class = "field">
+                <label>Email</label>
+                <input type="email" name="email" id="email_id">
+            </div>
+            <div class = "field">
+                <label>Password</label>
+                <input type="password" name="password" id="password_id">
+            </div>
+            <div class="error" id="password_error"></div>
+            <div class = "field">
+                <label>Phone Number</label>
+                <input type="phone" name="phone" id="phone_id">
+            <div class="error" id="phone_error"></div>
+            <div class = "field">
+                <label>Service Provider</label>
+                <select name="service_provider" id="service_provider" onchange="serviceProvider()">
+                    <option value="1"></option>
+                    <option value="2">AT&T</option>
+                    <option value="3">T-Mobile</option>
+                    <option value="4">Verizon</option>
+                </select>
+            </div>
+            <div class = "field">
+                <label>Contact Preference</label>
+                <select name="contact_preference" id="contact_preference_id" onchange="contactPreference()">
+                    <option value="1"></option>
+                    <option value="2">Email</option>
+                    <option value="3">Text</option>
+                </select>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </body>
+</html>
